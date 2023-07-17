@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+
+            <ul class="home"onclick="show1()">
+            <li>Home</li>
+            <ul class="content1">
+                <li>Home1</li>
+                <li>Home2</li>
+                <li>Home3</li>
+                <li>Home4</li>
+             </ul>
+             </ul>
+             <ul class="service" onclick="show2()">
+             <li>Service</li>
+             <ul class="content2">
+                <li>Service1</li>
+                <li>Service2</li>
+                <li>Service3</li>
+                <li>Service4</li>
+             </ul>
+             </ul>
+             <ul class="contact" onclick="show3()">
+             <li>Contact</li>
+             <ul class="content3">
+                <li>Contact1</li>
+                <li>Contact2</li>
+                <li>Contact3</li>
+                <li>Contact4</li>
+             </ul>
+             </ul>
+        </div>
+        <div class="center">
+            <li>Logo</li>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <hr>
+</body>
+<script>
+    function show1(){
+        if( document.querySelector(".content1").style.display !== "block"){
+            document.querySelector(".content1").style.display="block"
+            document.querySelector(".content2").style.display="none"
+            document.querySelector(".content3").style.display="none"
+
+         }else{
+            document.querySelector(".content1").style.display="none"
+         }
+    }
+    function show2(){
+        if( document.querySelector(".content2").style.display !== "block"){
+            document.querySelector(".content2").style.display="block"
+            document.querySelector(".content1").style.display="none"
+            document.querySelector(".content3").style.display="none"
+
+         }else{
+            document.querySelector(".content2").style.display="none"
+         }
+    }
+    function show3(){
+        if( document.querySelector(".content3").style.display !== "block"){
+            document.querySelector(".content3").style.display="block"
+            document.querySelector(".content1").style.display="none"
+            document.querySelector(".content2").style.display="none"
+
+         }else{
+            document.querySelector(".content3").style.display="none"
+         }
+    }
+</script>
+</html>
